@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- for tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- for googlefont -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
+        rel="stylesheet" />
+    <!-- fir icon font font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/tailwind.css">
+
+    <title>Tech Wave</title>
+</head>
+
+<body class="font-sans bg-[#1A0B2E]">
+    <header class="border-b border-b-purple-900">
+        <nav class="flex justify-between items-center max-w-[1240px] mx-auto p-[20px] ">
+            <h1 class="flex text-[43px] text-white font-extrabold cursor-pointer">Tech
+                <span class="bg-clip-text text-transparent bg-linear-to-tr from-yellow-300 via-pink-500 to-purple-700">Wave</span>
+            </h1>
+    
+            <div class="flex text-[16px] text-white font-medium gap-8
+            max-[576px]:hidden">
+                <a href="">About</a>
+                <a href="">Episodes</a>
+                <a href="">Host</a>
+            </div>
+    
+            <button class="bg-linear-to-tr from-yellow-300 via-pink-500 to-purple-700 text-white font-medium w-36 h-11 rounded-full cursor-pointer
+            max-[576px]:hidden">
+                Subscribe
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            
+            <img class="min-[576px]:hidden" src="./assets/hamburger-menu.png" alt="nav burger">
+        </nav>
+    </header>
+
+    <main>
+        <div class="bg-[url(./assets/hero-bg.png)] bg-cover bg-center bg-no-repeat flex-col justify-center items-center py-[101px]">
+            <div class="mx-auto flex items-center justify-center w-fit">
+                <img src="./assets/hero-circle.png" alt="hero circle">
+                <img class="absolute " src="./assets/microphone.png" alt="microphone">
+            </div>
+            <div class="flex-col justify-center items-center gap-2 mt-10">
+                <h1 class="text-center text-[60px] text-white font-extrabold">TechWave</h1>
+                <p class="text-center text-[16px] text-white">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+            </div>
+
+            <div class="flex justify-center items-center gap-2 mt-6">
+                <button class="flex justify-center items-center gap-2.5 bg-linear-to-tr from-yellow-300 via-pink-500 to-purple-700 text-white font-medium w-[201px] p-3 rounded-full cursor-pointer">
+                    <i class="fa-brands fa-spotify"></i>
+                    Listen On Spotify
+                </button>
+                <button class="flex justify-center items-center gap-2.5 w-[201px] p-3 border-2 border-green-500 text-green-500 font-medium rounded-full cursor-pointer">
+                    <i class="fa-regular fa-envelope"></i>
+                    Subscribe
+                </button>
+            </div>
+        </div>
+
+        <div class="flex-col justify-center items-center max-w-[1200px] mx-auto pt-12 pb-[120px]">
+            <div class="flex-col justify-center items-center text-center max-w-[780px] mx-auto">
+                <h2 class="text-[48px] text-white font-extrabold pb-4">About the Podcast</h2>
+                <p1 class="text-[16px] text-white">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.<br class="max-[643px]:hidden"> We break down complex topics into digestible insights, explore productivity strategies that actually work, and share stories of personal growth from industry leaders.</p>
+                <br>
+                <pclass="text-[16px] text-white font-medium">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+            </div>
+            <hr class="border-purple-900 my-20">
+            <div class="text-center flex flex-wrap justify-between items-center max-w-[1240px] px-5">
+                <div>
+                    <h1 class="text-[48px] text-green-400 font-extrabold">150K+</h1>
+                    <p class="text-[16px] text-white">Monthly Listeners</p>
+                </div>
+                <div>
+                    <h1 class="text-[48px] text-green-400 font-extrabold">200+</h1>
+                    <p class="text-[16px] text-white">Episodes Published</p>
+                </div>
+                <div>
+                    <h1 class="text-[48px] text-green-400 font-extrabold">4.9*</h1>
+                    <p class="text-[16px] text-white">Average Rating</p>
+                </div>
+                <div>
+                    <h1 class="text-[48px] text-green-400 font-extrabold">50+</h1>
+                    <p class="text-[16px] text-white">Industry Experts</p>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+
+    </footer>
+
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    sans: ['Inter var', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                },
+            },
+        },
+    }
+</script>
+</body>
+
+</html>
